@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense tracker</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome to expense tracker</h1>
+        <nav>
+            
+            <a href="/add-expense">Add Expense</a> |
+            <a href="/show-expense">Show Expense</a> |
+            <a href="/search">search by category</a> |
+            <a href="/highest_expense">Top Expense</a> |
+            <a href="/total_expense">Total Expense</a> |
+            <a href="/search_filter">Filter Search</a>
+        </nav>
+    </header>
+    <main>
+        {% block content %}{% endblock %}
+    </main> 
+</body>
+</html>
