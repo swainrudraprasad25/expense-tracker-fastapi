@@ -30,7 +30,7 @@ def add_expense(
     conn = get_connect()
     pen = conn.cursor()
     pen.execute(
-        "insert into record(id,catagory,amount,travelDate,description)"
+        "insert into record(id,catagory,amount,eventDate,description)"
         " values(%s,%s,%s,%s,%s)",
         (expense_id, catagory, amount, expense_date, description),
     )
@@ -38,7 +38,8 @@ def add_expense(
     pen.close()
     conn.close()
     return templates.TemplateResponse(
-        request=req, name="expenses.html", context={"expenses": []}
+        request=req, name="add_expense.html", 
+        context={"messege":"Expense added successfully" }
     )
 
 
