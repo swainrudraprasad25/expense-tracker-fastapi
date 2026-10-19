@@ -4,22 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Expense tracker</title>
+    <link rel="stylesheet" href="/static/style.css">
 </head>
 <body>
     <header>
-        <h1>Welcome to expense tracker</h1>
-        <nav>
+        <div>
+        <h1 class="heading1">Expense Tracker</h1>
+        <nav class="container ">
             
-            <a href="/add-expense">Add Expense</a> |
-            <a href="/show-expense">Show Expense</a> |
-            <a href="/search">search by category</a> |
-            <a href="/highest_expense">Top Expense</a> |
-            <a href="/total_expense">Total Expense</a> |
-            <a href="/search_filter">Filter Search</a>
+            <a href="/add-expense" class=" border">Add Expense</a>
+            <a href="/show-expense" class=" border">Show Expense</a>
+            <a href="/search" class=" border">search by category</a>
+            <a href="/highest_expense" class=" border">Top Expense</a>
+            <a href="/total_expense" class=" border">Total Expense</a>
+            <a href="/search_filter" class=" border">Filter Search</a>
         </nav>
+        </div>
     </header>
     <main>
         {% block content %}{% endblock %}
     </main> 
+    <footer>
+        &copy; 2026 Expense Tracker
+    </footer>
 </body>
 </html>

@@ -1,10 +1,14 @@
 {% extends "home.html" %}
 {% block content %}
+<div class="card">
 <h3>Search By Category:</h3>
 <form action="/search" method="post" target="_blank">
+    <div class="field">
     <label for="search">Category Name:</label>
     <input type="search" id="search" name="search">
+    </div>
     <button type="submit">submit</button>
 </form>
+</div>
     
 {% endblock %}

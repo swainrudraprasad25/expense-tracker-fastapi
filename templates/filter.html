@@ -1,12 +1,17 @@
 {% extends "home.html" %}
 {% block content %}
-<h3>Filter Search:</h3>
+<div class="card card-item">
+<h3 class="head2">Filter Search:</h3>
 <form action="/search_filter" method="post" target="_blank">
+    <div class="field">
     <label for="start_date">start date:</label>
     <input type="date" id="start_date" name="start_date"><br>
-
+    </div>
+    <div class="field">
     <label for="end_date">end date:</label>
     <input type="date" id="end_date" name="end_date"><br>
+    </div>
     <button type="submit">submit</button>
 </form>
+</div>
 {% endblock %}
